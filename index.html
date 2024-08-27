@@ -1,11 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-03</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-03</title>
+
+  <!-- Manrope google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- DaisyUI and Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/4e8371586c.js" crossorigin="anonymous"></script>
+
+  <script>
+    tailwind.config = {
+      content: [],
+      theme: {
+        extend: {
+          container: {
+            padding: {
+              DEFAULT: "1rem",
+              sm: "1rem",
+              lg: "2rem",
+              xl: "4rem",
+              "2xl": "5rem",
+            },
+          },
+          colors: {
+            accent: "#ABEF5F",
+          },
+          fontFamily: {
+            manrope: ["Manrope", "sans-serif"],
+          },
+          backgroundImage: {
+            bgContact: "url('./assets/bg-contact.jpg');",
+          },
+        },
+      },
+      plugins: [],
+    };
+  </script>
 </head>
-<body>
-    
+
+<body class="manrope-font">
+  <header class="bg-gradient-to-b from-gray-300 via-gray-100 to-white">
+    <nav class="container mx-auto flex">
+      <div class="navbar flex justify-around">
+        <div>
+          <a href="#" class="text-2xl font-extrabold">
+            <span class="bg-[#ABEF5F] rounded-full items-center mr-1">
+              <i class="fa-solid fa-arrow-right -rotate-45 p-1"></i>
+            </span>
+            Rinterio
+          </a>
+        </div>
+        <div class="hidden lg:block">
+          <ul class="list-none flex gap-7">
+            <li class="text-base hover:bg-white rounded-full px-1.5 font-semibold"><a href="#">Home</a></li>
+            <li class="text-base hover:bg-white rounded-full px-1.5 font-normal"><a href="#">Services</a></li>
+            <li class="text-base hover:bg-white rounded-full px-1.5 font-normal"><a href="#">Portfolio</a></li>
+            <li class="text-base hover:bg-white rounded-full px-1.5 font-normal"><a href="#">Blogs</a></li>
+            <li class="text-base hover:bg-white rounded-full px-1.5 font-normal"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="gap-3">
+          <div class="hidden md:block">
+            <i class="fa-solid fa-magnifying-glass items-center bg-white p-2.5 rounded-full mr-2"></i>
+            <i class="fa-solid fa-cart-shopping items-center bg-white p-2.5 rounded-full mr-2"></i>
+            <a href="#" class="text-xl font-extrabold bg-[#ABEF5F] rounded-full px-2 py-2">
+              Book Consult
+              <span>
+                <i class="fa-solid fa-arrow-right -rotate-45 p-1 bg-black text-white rounded-full"></i>
+              </span>
+            </a>
+          </div>
+          <div class="text-2xl lg:hidden">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+  </main>
+
+
+  <footer>
+
+  </footer>
 </body>
+
 </html>
